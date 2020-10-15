@@ -29,9 +29,9 @@ if (isset($_POST['login'])) {
         <?php if (isset($error) && !is_null($error)) : ?>
             <h2 style="background: red; padding: 30px;color: white"><?= $error ?></h2>
         <?php endif; ?>
-        <form action="" method="post" id="form">
-            <input type="text" name="mail" id="" placeholder="Enter your mail.." value="<?= isset($_POST['mail']) ? $_POST['mail'] : '' ?>">
-            <input type="password" name="password" id="" placeholder="Enter your password...">
+        <form method="post" id="form">
+            <input type="email" name="mail" placeholder="Enter your mail.." value="<?= isset($_POST['mail']) ? $_POST['mail'] : '' ?>">
+            <input type="password" name="password" placeholder="Enter your password...">
             <input type="submit" value="Login" name="login">
         </form>
     </div>
