@@ -18,7 +18,7 @@ if (is_null(get_session('is_authentificate'))){
     }
 }
 
-$query = 'SELECT * FROM article WHERE 1';
+$query = 'SELECT * FROM article';
 $request = $bdd->query($query);
 $articles = $request->fetchAll(PDO::FETCH_OBJ);
 ?>
